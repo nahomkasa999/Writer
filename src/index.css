@@ -1,0 +1,92 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Adaptive color scheme for light and dark mode */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin-left: 200px;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* Center the body and ensure consistency across screen sizes */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #242424;
+  overflow-x: hidden;
+}
+
+button:hover {
+  border-color: #646cff;
+  cursor: pointer;
+}
+
+#TitleArea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: clamp(3rem, 8vw, 5rem); /* Responsive font size */
+  
+  /* Ensure proper resize and padding */
+  resize: none;
+  overflow: fit; /* Better overflow control */
+  padding: 20px;
+  
+  border: none; /* Remove default borders */
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#wordcounter {
+  position: absolute;
+  top: -40px;
+  right: 50px; /* More flexible position */
+  color: rgba(255, 255, 255, 0.17);
+  font-size: 0.9rem;
+}
+
+#TextArea {
+  width: 100%; /* Take full width */
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  resize: none;
+  overflow: auto; /* Enable scrolling when needed */
+  
+  padding: 20px;
+  margin-bottom: 30px;
+  
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none; /* Disable default outline */
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(4, 4, 4, 0.898); /* Add custom scrollbar styling */
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #242424;
+}

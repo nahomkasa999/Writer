@@ -1,0 +1,87 @@
+.jodit span{
+  color: white;
+}
+
+.jodit-container, .jodit, .jodit_theme_default, .jodit-wysiwyg_mode{
+  height: 88vh !important;
+}
+
+.jodit path{
+  fill: rgba(255, 255, 255, 0.823);
+}
+
+.jodit-container, .jodit ,.jodit_theme_default , .jodit-ui-spacer, .jodit-wysiwyg, .jodit-wysiwyg_mode{
+  background-color: #242424 !important;
+}
+
+
+.jodit-toolbar-editor-collection,  .jodit-toolbar-editor-collection_mode_horizontal, .jodit-toolbar-editor-collection_size_middle{
+  background-color: #242424 !important;
+}
+.jodit-ui-group, .jodit-ui-group_line_true, .jodit-ui-group_size_middle{
+  background-color: #242424 !important;
+}
+
+.jodit-ui-group, .jodit-ui-group_size_middle, .jodit-ui-group, .jodit-ui-group_separated_true, .jodit-ui-group_group_font-style, .jodit-ui-group_size_middle{
+  background-color: #242424 !important;
+}
+
+.jodit-ui-group_separated_true:not(:last-child):not(.jodit-ui-group_before-spacer_true):after{
+  background-color: #242424 !important;
+  display: none;
+}
+
+.jodit-status-bar, .jodit-add-new-line{
+  display: none;
+}
+
+.jodit-toolbar__box:not(:empty) .jodit-toolbar-editor-collection:after{
+  display: none;
+}
+
+.jodit-container:not(.jodit_inline){
+border: none !important;
+}
+
+.jodit-ui-group:last-child{
+  border: none !important;
+}
+
+.jodit-toolbar__box:not(:empty){
+  border: none;
+}
+
+.jodit-popup__content{
+  background-color: #242424;
+}
+
+.jodit-ui-input__input{
+  background-color: #242424;
+}
+
+.jodit-ui-text-area__input{
+  background-color: #242424;
+}
+.jodit-ui-button__text{
+  background-color: #242424;
+  color: black;
+}
+
+.jodit-ui-button, .jodit-ui-button_size_middle, .jodit-ui-button_text-icons_true, .jodit-ui-button_keep, .jodit-ui-button_variant_primary{
+  background-color: #242424;
+}
+.jodit-ui-button, .jodit-ui-button_size_middle, .jodit-ui-button_text-icons_true, .jodit-ui-button_keep, .jodit-ui-button_variant_primary:hover{
+  border: none;
+}
+
+.jodit-dialog_prompt, .jodit-dialog__content, .jodit-dialog__header{
+  background-color: #242424;
+}
+
+.jodit-dialog__footer{
+  background-color: #242424;
+}
+.jodit-ui-button, .jodit-ui-button_size_middle, .jodit-ui-button_text-icons_true, .jodit-ui-button_keep, .jodit-ui-button_variant_primary:hover {
+  border: none;
+}
+

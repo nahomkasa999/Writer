@@ -26,6 +26,7 @@ function TextArea() {
         onChange={CountWord}
       ></textarea>
     </>
+    
   );
 }
 

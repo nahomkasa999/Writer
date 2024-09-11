@@ -85,3 +85,13 @@ border: none !important;
   border: none;
 }
 
+/* .jodit-dialog__panel{
+  display: none;
+} */
+
+@media (max-width: 768px) {
+  .jodit-container,
+  .jodit {
+    width: 50% !important; /* Reduce height for smaller screens */
+  }
+}

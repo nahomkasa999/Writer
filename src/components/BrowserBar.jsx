@@ -59,7 +59,7 @@ const handleSubmit = (e) => {
   };
 
   return (
-    <div>
+    <div style={{marginTop: 80}}>
       <h1>Wikipedia Search</h1>
       <form onSubmit={handleSubmit}>
         <input

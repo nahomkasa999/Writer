@@ -2,25 +2,21 @@
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   font-weight: 400;
-
-  /* Adaptive color scheme for light and dark mode */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Body Styling */
 body {
-  margin-left: 200px;
+  margin-left: 10vw; /* Make the margin responsive based on viewport width */
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-
-  /* Center the body and ensure consistency across screen sizes */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -28,65 +24,77 @@ body {
   overflow-x: hidden;
 }
 
-button:hover {
-  border-color: #646cff;
-  cursor: pointer;
-}
-
+/* Title Area Styling */
 #TitleArea {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: clamp(3rem, 8vw, 5rem); /* Responsive font size */
-  
-  /* Ensure proper resize and padding */
+  font-size: clamp(3rem, 5vw, 5rem); /* Adjust the font size responsively */
   resize: none;
-  overflow: fit; /* Better overflow control */
+  overflow: hidden;
   padding: 20px;
-  
-  border: none; /* Remove default borders */
+  border: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.87);
 }
 
+/* Word Counter Styling */
 #wordcounter {
   position: absolute;
   top: -40px;
-  right: 50px; /* More flexible position */
+  right: 5vw; /* Adjust the right margin based on viewport width */
   color: rgba(255, 255, 255, 0.17);
   font-size: 0.9rem;
 }
 
+/* Text Area Styling */
 #TextArea {
-  width: 100%; /* Take full width */
+  width: 100%; /* Full width for text area */
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
-
   resize: none;
-  overflow: auto; /* Enable scrolling when needed */
-  
+  overflow: auto;
   padding: 20px;
   margin-bottom: 30px;
-  
   border: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.87);
-  
   box-sizing: border-box;
 }
 
-textarea:focus {
-  outline: none; /* Disable default outline */
-}
-
+/* Scrollbar Styling */
 textarea::-webkit-scrollbar {
   width: 4px;
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: rgba(4, 4, 4, 0.898); /* Add custom scrollbar styling */
+  background-color: rgba(4, 4, 4, 0.898);
   border-radius: 10px;
 }
 
 textarea::-webkit-scrollbar-track {
   background: #242424;
+}
+
+/* Button Hover Effect */
+button:hover {
+  cursor: pointer;
+}
+
+textarea:focus{
+  border: none !important;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  body {
+    margin-left: 5vw; /* Reduce margin for smaller screens */
+  }
+
+  #wordcounter {
+    right: 10px; /* Move closer for smaller screens */
+  }
+
+  #TitleArea {
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Adjust font size for mobile */
+  }
 }
